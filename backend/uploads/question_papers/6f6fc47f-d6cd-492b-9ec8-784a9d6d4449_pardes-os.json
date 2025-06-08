@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Unit I - 1a",
+    "text": "Define system call. Explain the different types of system calls under process management and memory management."
+  },
+  {
+    "question": "Unit I - 1b",
+    "text": "Differentiate between User view and system view of the operating system."
+  },
+  {
+    "question": "Unit I - 1c",
+    "text": "Describe the dual mode operation of an operating system with a neat diagram."
+  },
+  {
+    "question": "Unit I - 2a",
+    "text": "List out the activities of operating systems related to process management and memory management."
+  },
+  {
+    "question": "Unit I - 2b",
+    "text": "List out the benefits of virtual machines and describe about para virtualization."
+  },
+  {
+    "question": "Unit I - 2c",
+    "text": "Explain the various services provided by the operating-system that are helpful to the users and for system itself."
+  },
+  {
+    "question": "Unit II - 3a",
+    "text": "With an example show how an Inter process communication is implemented using shared memory approach."
+  },
+  {
+    "question": "Unit II - 3b",
+    "text": "Define semaphore and discuss the primitive system calls used to provide synchronization using semaphore."
+  },
+  {
+    "question": "Unit II - 3c",
+    "text": "With a neat diagram discuss multilevel feedback-queue scheduling."
+  },
+  {
+    "question": "Unit II - 4a",
+    "text": "With a neat diagram, describe process state diagram."
+  },
+  {
+    "question": "Unit II - 4b",
+    "text": "“The implementation of a semaphore with a waiting queue may result in a deadlock situation”. Justify the statement with proper example."
+  },
+  {
+    "question": "Unit II - 4c",
+    "text": "Define Readers-writer problem of synchronization and provide the solution for the same using semaphore."
+  },
+  {
+    "question": "Unit III - 5a",
+    "text": "Consider the resource allocation graph given below. Find if the system is in a deadlock state otherwise find a safe sequence."
+  },
+  {
+    "question": "Unit III - 5b",
+    "text": "Discuss deadlock prevention method used to handle the deadlock in a system."
+  },
+  {
+    "question": "Unit III - 5c",
+    "text": "With a help of neat diagram briefly explain Demand Paging."
+  },
+  {
+    "question": "Unit III - 6a",
+    "text": "Discuss, How to prevent the occurrence of deadlock?"
+  },
+  {
+    "question": "Unit III - 6b",
+    "text": "Free memory holes of sizes 15K, 10K, 5K, 25K, 30K, 40K are available. The processes of size 12K, 2K, 25K, 20K is to be allocated. How processes are placed in first fit, best fit, worst fit. Calculate internal as well as external fragmentation."
+  },
+  {
+    "question": "Unit III - 6c",
+    "text": "Give the difference between: i) Physical address and Logical address ii) Internal and External fragmentation iii) Segmentation and Paging."
+  },
+  {
+    "question": "Unit IV - 7a",
+    "text": "Suppose the position of cylinder is at 53.the disk drive has cylinders numbered from 0 to 199.the queue of pending request in FIFO order is : 98,183,37,122,14,124,65,67.starting from the current head position, what is the total distance travelled by the disk arm to satisfy the request using algorithms SCAN and LOOK. Illustrate the figures in each case."
+  },
+  {
+    "question": "Unit IV - 7b",
+    "text": "Describe the methods used for implementing the directories."
+  },
+  {
+    "question": "Unit IV - 7c",
+    "text": "What is file? Explain various allocation methods to implement a file system."
+  },
+  {
+    "question": "Unit IV - 8a",
+    "text": "Explain with a neat diagram, tree-structure directories."
+  },
+  {
+    "question": "Unit IV - 8b",
+    "text": "Suppose that a disk drive has 5,000 cylinders, numbered 0 to 4,999. The drive is currently serving a request at cylinder 2,150, and the previous request was at cylinder 1,805. The queue of pending requests, in FIFO order, is: 2,069, 1,212, 2,296, 2,800, 544, 1,618, 356, 1,523, 4,965, 3681 Starting from the current head position, what is the total distance (in cylinders) that the disk arm moves to satisfy all the pending requests for each of the following disk-scheduling algorithms? i) FCFS ii) SSTF"
+  },
+  {
+    "question": "Unit IV - 8c",
+    "text": "Discuss the operations that are performed on a directory."
+  },
+  {
+    "question": "Unit V - 9a",
+    "text": "Differentiate between virtualization and containerization."
+  },
+  {
+    "question": "Unit V - 9b",
+    "text": "Demonstrate the various types networks in dockers and containers and also write the advantages provided by the docker container."
+  },
+  {
+    "question": "Unit V - 9c",
+    "text": "What is docker images and How To Create A Docker Image And Run It As Container?"
+  },
+  {
+    "question": "Unit V - 10a",
+    "text": "Explain the docker architecture with a neat diagram."
+  },
+  {
+    "question": "Unit V - 10b",
+    "text": "Discuss the basic docker commands."
+  },
+  {
+    "question": "Unit V - 10c",
+    "text": "Describe the characteristics and use cases of tempf mounts."
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "course_name": "Operating System",
+  "units": [
+    {
+      "unit": "Unit I",
+      "title": "Introduction to Operating Systems",
+      "syllabus_content": "What operating systems do, Operating System operations, Process management, Memory management, Storage management, Protection and security. System Structures- Operating System Services, System calls, Operating System design and implementation, Operating System structure, Virtual machines."
+    },
+    {
+      "unit": "Unit II",
+      "title": "Process Management",
+      "syllabus_content": "Process concept, Process scheduling, Operations on processes, Inter- process communication. Process Scheduling- Basic concepts, Scheduling criteria, Scheduling algorithms, Multiple-Processor scheduling. Process Synchronization- Background, The Critical section problem, Synchronization hardware, Semaphores, Classical problems of synchronization."
+    },
+    {
+      "unit": "Unit III",
+      "title": "Deadlocks",
+      "syllabus_content": "System model, Deadlock characterization, Methods for handling deadlocks, Deadlock prevention, Deadlock avoidance. Memory Management Strategies- Background, Swapping, Contiguous memory allocation, Paging, Structure of page table, Segmentation. Virtual Memory Management- Background, Demand paging, Page replacement."
+    },
+    {
+      "unit": "Unit IV",
+      "title": "File System",
+      "syllabus_content": "System model, Deadlock characterization, Methods for handling deadlocks, Deadlock prevention, Deadlock avoidance. Memory Management Strategies- Background, Swapping, Contiguous memory allocation, Paging, Structure of page table, Segmentation. Virtual Memory Management- Background, Demand paging, Page replacement."
+    },
+    {
+      "unit": "Unit V",
+      "title": "Dockers",
+      "syllabus_content": "Docker Basics and Architecture, what is containerization, how are containers different  from Dockers-Docker Basics and Architecture, what is containerization, how are containers different from physical machines and VMs, Docker evolution and architecture, Developments in Docker world, Docker tooling, Basic Docker commands. Docker Networking- Introduction, Types of Docker networks, Using Networks, Identifying container networks, Docker Volumes-Managing data in Docker containers with volumes, Volume file systems and basic Docker image file systems, Creating and managing volumes."
+    }
+  ]
+}

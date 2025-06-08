@@ -1,46 +1,36 @@
+import os
 from flask import Flask
 from flask_cors import CORS
-from flask_pymongo import PyMongo
+from config import config
+from .models.db_models import init_db
+from bson import ObjectId
+import json
+from flask.json import JSONEncoder
 
-# Initialize extensions
-mongo = PyMongo()
-cors = CORS()
+class MongoJSONEncoder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, ObjectId):
+            return str(obj)
+        return super().default(obj)
 
 def create_app(config_name='default'):
-    """Application factory pattern."""
     app = Flask(__name__)
     
-    # Load configuration
-    from config import config
+    # Apply configuration
     app.config.from_object(config[config_name])
+    config[config_name].init_app(app)
     
-    # Initialize extensions
-    mongo.init_app(app)
-    cors.init_app(app, resources={
-        r"/api/*": {
-            "origins": ["http://localhost:5173", "http://localhost:3000"],
-            "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-            "allow_headers": ["Content-Type", "Authorization"]
-        }
-    })
+    # Setup CORS
+    CORS(app)
     
-    # Create upload and index directories
-    import os
-    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-    os.makedirs(app.config['FAISS_INDEX_FOLDER'], exist_ok=True)
+    # Set custom JSON encoder
+    app.json_encoder = MongoJSONEncoder
+    
+    # Initialize database
+    init_db(app)
     
     # Register blueprints
-    from app.api.admin_routes import admin_bp
-    from app.api.user_routes import user_bp
-    from app.api.auth_routes import auth_bp
+    from .api.routes import api as api_blueprint
+    app.register_blueprint(api_blueprint, url_prefix='/api')
     
-    app.register_blueprint(admin_bp, url_prefix='/api/admin')
-    app.register_blueprint(user_bp, url_prefix='/api')
-    app.register_blueprint(auth_bp, url_prefix='/api/auth')
-    
-    # Health check route
-    @app.route('/api/health')
-    def health_check():
-        return {'status': 'healthy', 'message': 'Question Paper Scrutinization API is running'}
-    
-    return app
+    return app 
