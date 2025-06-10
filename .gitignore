@@ -2,3 +2,5 @@ Miniconda3-latest-MacOSX-arm64.sh
 *.sh
 # Large installer files
 Miniconda*
+Miniconda3-latest-MacOSX-arm64.sh
+Miniconda*
